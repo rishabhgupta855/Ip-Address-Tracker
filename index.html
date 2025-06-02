@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ip address tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+     <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>IP Address Tracker</h1>
+            <div class="input-container">
+           <input name="ip-input"  placeholder="search for any IP address or domain">
+          <div class="arrow-img"><img src="images/icon-arrow.svg" alt="icon-arrow"></div> 
+            </div>
+        </header>
+    <div class="result">
+        <div class="ip-result">
+            <span>
+                IP address
+            </span>
+           <p></p>
+        </div>
+        <div class="location-result">
+            <span>
+             Location
+            </span>
+           <p></p>
+        </div>
+        <div class="timezone-result">
+            <span>
+            Timezone
+            </span>
+           <p></p>
+        </div>
+        <div class="isp-result">
+            <span>
+            ISP
+            </span>
+           <p></p>
+        </div>
+    </div>
+
+    <div id="map">
+ 
+    </div>
+    </main>
+</body>
+</html>

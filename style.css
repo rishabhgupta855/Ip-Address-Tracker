@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --Very-Dark-Gray: hsl(0, 0%, 17%);
+--Dark-Gray:hsl(0, 0%, 59%);
+font-family: "Rubik", sans-serif;
+font-size: 62.5%;
+}
+
+/*  */
+
+    /* 400 500 700 */
+
+
+header{
+  height: 30vh;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url('images/pattern-bg-desktop.png');
+    background-position: center;
+    background-size: cover;
+}
+header h1{
+    color:white;
+    font-size: 3rem;
+    margin:2rem 0;
+    font-weight: 500;
+}
+.input-container{
+    width:30%;
+ cursor: pointer;
+  
+
+    display: flex;
+  
+}
+.input-container input{
+    padding:1.5rem;
+    font-size: 2rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius:1rem;
+    width:90%;
+    
+    outline: transparent;
+}
+.input-container .arrow-img{
+    background-color: hsl(0, 0%, 17%);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width:10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-container .arrow-img:hover{
+    background-color: hsl(0, 1%, 27%);
+}
+.result{
+   padding: 2rem;
+   border-radius: 1.5rem;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:white;
+  width:80%;
+  min-height:15%;
+  z-index: 444;
+  transition: 0.5s ease-in-out;
+}
+.result>div{
+    display: flex;
+    flex-direction: column;
+    /* border:5px solid red; */
+    width:25%;
+    padding:1rem;
+   
+}
+.result div p{
+    font-size:3rem;
+    font-weight: 700;
+}
+.result span{
+    font-size: 2rem;
+    color:var(--Dark-Gray);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#map{
+    width: 100%;
+    height: 69.5vh;
+}
+
+@media screen and (max-width:1300px) {
+    .result{
+        width:99%;
+    }
+    .result div p{
+        font-size:2.3rem;
+        font-weight: 500;
+    }
+    .result>div{
+        margin-left:1rem;
+    }
+}
+@media screen and (max-width:1100px){
+    .input-container{
+        width:55%;
+    }
+ .result{
+    font-size: 1.4rem;
+    flex-direction: column;
+ 
+   
+    text-align: center;
+    width:70%;
+    padding: 0.5rem;
+ }
+ .result>div{
+    width:100%;
+ }
+
+.result span{
+    font-size: 1.5rem;
+
+}
+}
+@media screen and (max-width:600px){
+    .input-container{
+        width:80%
+    }
+    .result{
+        width:85%;
+    }
+}
